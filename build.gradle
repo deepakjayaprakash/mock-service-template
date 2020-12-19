@@ -1,5 +1,12 @@
 plugins {
+    id 'org.springframework.boot' version '2.3.1.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.9.RELEASE'
     id 'java'
+}
+
+ext {
+    springBootVersion = "2.3.1.RELEASE"
+    logbookVersion = "1.8.1"
 }
 
 group 'org.example'
@@ -12,6 +19,31 @@ repositories {
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: springBootVersion
+    compile group: 'org.hibernate.javax.persistence', name: 'hibernate-jpa-2.1-api', version: '1.0.2.Final'
+    compile group: 'org.hibernate', name: 'hibernate-envers'
+
+    compile group: 'joda-time', name: 'joda-time', version: '2.10.2'
+    compile group: 'org.apache.commons', name: 'commons-collections4', version: '4.0'
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.4'
+    annotationProcessor 'org.projectlombok:lombok:1.18.4'
+    compile group: 'org.jmockit', name: 'jmockit', version: '1.41'
+    compile group: 'org.testng', name: 'testng', version: '6.14.3'
+
+    compile(group: 'com.zaxxer', name: 'HikariCP', version: '3.1.0') {
+        exclude group: 'org.hibernate', module: 'hibernate-core'
+    }
+    runtime group: 'mysql', name: 'mysql-connector-java', version: '8.0.16'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+bootRun {
+    environment SPRING_PROFILES_ACTIVE: environment.SPRING_PROFILES_ACTIVE ?: "local"
 }
 
 test {
