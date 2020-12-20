@@ -32,3 +32,5 @@ There are 2 tables:
 > `curl --location --request GET 'localhost:8080/mock-service/get-api/1'`
 
 It shall return you the response that is stored in the response_mapping table for the key id: 1
+- For further information about sample API request/responses, after starting the application, hit `http://localhost:8080/swagger-ui.html`
+ and check out swagger ui
