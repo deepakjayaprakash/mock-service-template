@@ -20,9 +20,6 @@ public class ResponseEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "response")
-    private String response;
-
     @Column(name = "response_json", columnDefinition= "json")
     private String responseJson;
 }
