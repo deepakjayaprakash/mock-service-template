@@ -1,4 +1,4 @@
-package com.serivce.mock.model;
+package com.service.mock.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Getter;
@@ -20,6 +20,6 @@ public class APIEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "api_id")
-    private Long apiId;
+    @Column(name = "key_id")
+    private Long keyId;
 }

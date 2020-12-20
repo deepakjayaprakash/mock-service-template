@@ -1,9 +1,9 @@
-package com.serivce.mock.handler;
+package com.service.mock.handler;
 
 
-import com.serivce.mock.exception.ApplicationException;
-import com.serivce.mock.exception.WrappedException;
-import com.serivce.mock.dto.ResponseDTO;
+import com.service.mock.exception.ApplicationException;
+import com.service.mock.exception.WrappedException;
+import com.service.mock.dto.ResponseDTO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;

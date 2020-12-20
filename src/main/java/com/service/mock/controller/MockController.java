@@ -1,7 +1,7 @@
-package com.serivce.mock.controller;
+package com.service.mock.controller;
 
-import com.serivce.mock.dto.ResponseDTO;
-import com.serivce.mock.impl.MockImpl;
+import com.service.mock.dto.ResponseDTO;
+import com.service.mock.impl.MockImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @Slf4j
-@RequestMapping(value = "/mock")
+@RequestMapping(value = "/mock-service")
 public class MockController {
 
     @Autowired

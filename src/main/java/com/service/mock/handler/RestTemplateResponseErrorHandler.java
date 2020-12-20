@@ -1,4 +1,4 @@
-package com.serivce.mock.handler;
+package com.service.mock.handler;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpHeaders;

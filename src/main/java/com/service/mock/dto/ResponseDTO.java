@@ -1,4 +1,4 @@
-package com.serivce.mock.dto;
+package com.service.mock.dto;
 
 import lombok.Data;
 

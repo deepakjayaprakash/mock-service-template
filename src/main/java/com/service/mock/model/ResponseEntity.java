@@ -1,4 +1,4 @@
-package com.serivce.mock.model;
+package com.service.mock.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Getter;
@@ -22,4 +22,7 @@ public class ResponseEntity {
 
     @Column(name = "response")
     private String response;
+
+    @Column(name = "response_json", columnDefinition= "json")
+    private String responseJson;
 }

@@ -1,4 +1,4 @@
-package com.serivce.mock.exception;
+package com.service.mock.exception;
 
 import lombok.Getter;
 import lombok.Setter;

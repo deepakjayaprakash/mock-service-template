@@ -1,6 +1,6 @@
-package com.serivce.mock.repository;
+package com.service.mock.repository;
 
-import com.serivce.mock.model.ResponseEntity;
+import com.service.mock.model.ResponseEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.jpa.repository.Query;
